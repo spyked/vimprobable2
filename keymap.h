@@ -129,7 +129,7 @@ Key keys[] = {
     { 0,                    GDK_g,          GDK_i,          focus_input,{} },
     { 0,                    0,              GDK_u,          revive,     {} },
 
-    { 0,                    0,              GDK_d,          quit,       {0} },
+    { GDK_CONTROL_MASK,     0,              GDK_q,          quit,       {0} },
 	/* leave this last line as last */
     { 0,                    0,              0,              0,          {0} },
 };
