@@ -11,6 +11,8 @@
 
 #define _KEYMAP
 
+#define TABBED_MODKEY ControlMask
+
 /* key bindings for normal mode
     Note: GDK_VoidSymbol is a wildcard so it matches on every modkey
 */
@@ -42,18 +44,18 @@ Key keys[] = {
     { GDK_CONTROL_MASK,     0,              GDK_e,          scroll,     {ScrollMove     | DirectionBottom   | UnitLine} },
     { GDK_CONTROL_MASK,     0,              GDK_y,          scroll,     {ScrollMove     | DirectionTop      | UnitLine} },
 
-    { 0,                    GDK_g,          GDK_t,          fake_key_event,   { .s = "l", .i = ShiftMask + ControlMask   } },
-    { 0,                    GDK_g,          GDK_T,          fake_key_event,   { .s = "h", .i = ShiftMask + ControlMask  } },
-    { 0,                    GDK_g,          GDK_1,          fake_key_event,   { .s = "1", .i = ControlMask   } },
-    { 0,                    GDK_g,          GDK_2,          fake_key_event,   { .s = "2", .i = ControlMask   } },
-    { 0,                    GDK_g,          GDK_3,          fake_key_event,   { .s = "3", .i = ControlMask   } },
-    { 0,                    GDK_g,          GDK_4,          fake_key_event,   { .s = "4", .i = ControlMask   } },
-    { 0,                    GDK_g,          GDK_5,          fake_key_event,   { .s = "5", .i = ControlMask   } },
-    { 0,                    GDK_g,          GDK_6,          fake_key_event,   { .s = "6", .i = ControlMask   } },
-    { 0,                    GDK_g,          GDK_7,          fake_key_event,   { .s = "7", .i = ControlMask   } },
-    { 0,                    GDK_g,          GDK_8,          fake_key_event,   { .s = "8", .i = ControlMask   } },
-    { 0,                    GDK_g,          GDK_9,          fake_key_event,   { .s = "9", .i = ControlMask   } },
-    { 0,                    GDK_g,          GDK_0,          fake_key_event,   { .s = "0", .i = ControlMask   } },
+    { 0,                    GDK_g,          GDK_t,          fake_key_event,   { .s = "l", .i = ShiftMask + TABBED_MODKEY   } },
+    { 0,                    GDK_g,          GDK_T,          fake_key_event,   { .s = "h", .i = ShiftMask + TABBED_MODKEY  } },
+    { 0,                    GDK_g,          GDK_1,          fake_key_event,   { .s = "1", .i = TABBED_MODKEY   } },
+    { 0,                    GDK_g,          GDK_2,          fake_key_event,   { .s = "2", .i = TABBED_MODKEY   } },
+    { 0,                    GDK_g,          GDK_3,          fake_key_event,   { .s = "3", .i = TABBED_MODKEY   } },
+    { 0,                    GDK_g,          GDK_4,          fake_key_event,   { .s = "4", .i = TABBED_MODKEY   } },
+    { 0,                    GDK_g,          GDK_5,          fake_key_event,   { .s = "5", .i = TABBED_MODKEY   } },
+    { 0,                    GDK_g,          GDK_6,          fake_key_event,   { .s = "6", .i = TABBED_MODKEY   } },
+    { 0,                    GDK_g,          GDK_7,          fake_key_event,   { .s = "7", .i = TABBED_MODKEY   } },
+    { 0,                    GDK_g,          GDK_8,          fake_key_event,   { .s = "8", .i = TABBED_MODKEY   } },
+    { 0,                    GDK_g,          GDK_9,          fake_key_event,   { .s = "9", .i = TABBED_MODKEY   } },
+    { 0,                    GDK_g,          GDK_0,          fake_key_event,   { .s = "0", .i = TABBED_MODKEY   } },
 
     { GDK_CONTROL_MASK,     0,              GDK_i,          navigate,   {NavigationBack} },
     { GDK_CONTROL_MASK,     0,              GDK_o,          navigate,   {NavigationForward} },
