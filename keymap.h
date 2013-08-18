@@ -11,7 +11,7 @@
 
 #define _KEYMAP
 
-#define TABBED_MODKEY ControlMask
+#define TABBED_MODKEY Mod1Mask
 
 /* key bindings for normal mode
     Note: GDK_VoidSymbol is a wildcard so it matches on every modkey
